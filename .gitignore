@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+.env
+.DS_Store
+Thumbs.db
+*.tmp
+~$*
+*.docx
+*.pdf
+*.joblib
+outputs/figures/figure_contact_sheet.png
+
