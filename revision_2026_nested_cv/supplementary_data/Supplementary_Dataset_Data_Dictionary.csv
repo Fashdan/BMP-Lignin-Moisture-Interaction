@@ -1,0 +1,60 @@
+column,definition,unit,scenario_or_status,residual_sign_convention
+source_row_id,Original row identifier from the source data table.,,source/feature,
+source_label,"Composite feedstock label assembled from family, type, and subtype; missing subtype is labelled not specified.",,source metadata,
+Family,Feedstock family in the source dataset.,,source/feature,
+Type,Feedstock type in the source dataset.,,source/feature,
+Sub Type,"Feedstock subtype in the source dataset, where specified.",,source/feature,
+DM Mean (% FM),"Model feature, target, or source variable used in the supplementary row-level dataset.",% fresh matter,source/feature,
+VS Mean (% FM),"Model feature, target, or source variable used in the supplementary row-level dataset.",% fresh matter,source/feature,
+VS/DM Mean (% FM),"Model feature, target, or source variable used in the supplementary row-level dataset.",ratio,source/feature,
+observed_BMP_VS,"Model feature, target, or source variable used in the supplementary row-level dataset.",Nm³ CH₄/t VS,source/feature,
+computed_observed_BMP_DM,"Model feature, target, or source variable used in the supplementary row-level dataset.",Nm³ CH₄/t DM,source/feature,
+included_DM_ge_15,Whether the row met the dry-matter eligibility criterion.,,source/feature,
+complete_model_inputs,Whether all modelling inputs were available after eligibility filtering.,,source/feature,
+C/N,"Model feature, target, or source variable used in the supplementary row-level dataset.",ratio,source/feature,
+Carbon Mean (% DM),"Model feature, target, or source variable used in the supplementary row-level dataset.",% dry matter,source/feature,
+Hydrogen Mean (% DM),"Model feature, target, or source variable used in the supplementary row-level dataset.",% dry matter,source/feature,
+Nitrogen Mean (% DM),"Model feature, target, or source variable used in the supplementary row-level dataset.",% dry matter,source/feature,
+Sulfur Mean (% DM),"Model feature, target, or source variable used in the supplementary row-level dataset.",% dry matter,source/feature,
+Oxygen Mean (% DM),"Model feature, target, or source variable used in the supplementary row-level dataset.",% dry matter,source/feature,
+Cellulose Mean (g/100g DM),"Model feature, target, or source variable used in the supplementary row-level dataset.",g/100 g DM,source/feature,
+Hemicelluloses Mean (g/100g DM),"Model feature, target, or source variable used in the supplementary row-level dataset.",g/100 g DM,source/feature,
+Lignin Mean (g/100g DM),"Model feature, target, or source variable used in the supplementary row-level dataset.",g/100 g DM,source/feature,
+A_BMP_VS_all_features__nested_oof_prediction_mean,Mean repeated out-of-fold prediction; each row was excluded from training in contributing folds.,,out-of-fold,
+A_BMP_VS_all_features__nested_oof_prediction_sd,Standard deviation across repeated out-of-fold predictions for the row.,,out-of-fold,
+A_BMP_VS_all_features__nested_oof_residual_obs_minus_pred,Residual calculated as observed minus mean repeated out-of-fold prediction.,,out-of-fold,observed minus prediction
+A_BMP_VS_all_features__nested_oof_abs_error,Absolute error from the mean repeated out-of-fold prediction.,,out-of-fold,
+A_BMP_VS_all_features__nested_oof_abs_pct_error,Absolute percentage error from the mean repeated out-of-fold prediction.,,out-of-fold,
+B_BMP_DM_no_DM_VS__nested_oof_prediction_mean,Mean repeated out-of-fold prediction; each row was excluded from training in contributing folds.,,out-of-fold,
+B_BMP_DM_no_DM_VS__nested_oof_prediction_sd,Standard deviation across repeated out-of-fold predictions for the row.,,out-of-fold,
+B_BMP_DM_no_DM_VS__nested_oof_residual_obs_minus_pred,Residual calculated as observed minus mean repeated out-of-fold prediction.,,out-of-fold,observed minus prediction
+B_BMP_DM_no_DM_VS__nested_oof_abs_error,Absolute error from the mean repeated out-of-fold prediction.,,out-of-fold,
+B_BMP_DM_no_DM_VS__nested_oof_abs_pct_error,Absolute percentage error from the mean repeated out-of-fold prediction.,,out-of-fold,
+C_BMP_DM_all_features__nested_oof_prediction_mean,Mean repeated out-of-fold prediction; each row was excluded from training in contributing folds.,,out-of-fold,
+C_BMP_DM_all_features__nested_oof_prediction_sd,Standard deviation across repeated out-of-fold predictions for the row.,,out-of-fold,
+C_BMP_DM_all_features__nested_oof_residual_obs_minus_pred,Residual calculated as observed minus mean repeated out-of-fold prediction.,,out-of-fold,observed minus prediction
+C_BMP_DM_all_features__nested_oof_abs_error,Absolute error from the mean repeated out-of-fold prediction.,,out-of-fold,
+C_BMP_DM_all_features__nested_oof_abs_pct_error,Absolute percentage error from the mean repeated out-of-fold prediction.,,out-of-fold,
+D1_BMP_DM_no_DM__nested_oof_prediction_mean,Mean repeated out-of-fold prediction; each row was excluded from training in contributing folds.,,out-of-fold,
+D1_BMP_DM_no_DM__nested_oof_prediction_sd,Standard deviation across repeated out-of-fold predictions for the row.,,out-of-fold,
+D1_BMP_DM_no_DM__nested_oof_residual_obs_minus_pred,Residual calculated as observed minus mean repeated out-of-fold prediction.,,out-of-fold,observed minus prediction
+D1_BMP_DM_no_DM__nested_oof_abs_error,Absolute error from the mean repeated out-of-fold prediction.,,out-of-fold,
+D1_BMP_DM_no_DM__nested_oof_abs_pct_error,Absolute percentage error from the mean repeated out-of-fold prediction.,,out-of-fold,
+D2_BMP_DM_no_VS__nested_oof_prediction_mean,Mean repeated out-of-fold prediction; each row was excluded from training in contributing folds.,,out-of-fold,
+D2_BMP_DM_no_VS__nested_oof_prediction_sd,Standard deviation across repeated out-of-fold predictions for the row.,,out-of-fold,
+D2_BMP_DM_no_VS__nested_oof_residual_obs_minus_pred,Residual calculated as observed minus mean repeated out-of-fold prediction.,,out-of-fold,observed minus prediction
+D2_BMP_DM_no_VS__nested_oof_abs_error,Absolute error from the mean repeated out-of-fold prediction.,,out-of-fold,
+D2_BMP_DM_no_VS__nested_oof_abs_pct_error,Absolute percentage error from the mean repeated out-of-fold prediction.,,out-of-fold,
+A_BMP_VS_all_features__apparent_full_data_prediction,Prediction from a model fitted on all eligible rows; not a validation prediction.,,apparent full-data fit,
+A_BMP_VS_all_features__apparent_full_data_residual_obs_minus_pred,Observed minus apparent full-data fitted prediction; not a validation residual.,,apparent full-data fit,observed minus prediction
+B_BMP_DM_no_DM_VS__apparent_full_data_prediction,Prediction from a model fitted on all eligible rows; not a validation prediction.,,apparent full-data fit,
+B_BMP_DM_no_DM_VS__apparent_full_data_residual_obs_minus_pred,Observed minus apparent full-data fitted prediction; not a validation residual.,,apparent full-data fit,observed minus prediction
+C_BMP_DM_all_features__apparent_full_data_prediction,Prediction from a model fitted on all eligible rows; not a validation prediction.,,apparent full-data fit,
+C_BMP_DM_all_features__apparent_full_data_residual_obs_minus_pred,Observed minus apparent full-data fitted prediction; not a validation residual.,,apparent full-data fit,observed minus prediction
+D1_BMP_DM_no_DM__apparent_full_data_prediction,Prediction from a model fitted on all eligible rows; not a validation prediction.,,apparent full-data fit,
+D1_BMP_DM_no_DM__apparent_full_data_residual_obs_minus_pred,Observed minus apparent full-data fitted prediction; not a validation residual.,,apparent full-data fit,observed minus prediction
+D2_BMP_DM_no_VS__apparent_full_data_prediction,Prediction from a model fitted on all eligible rows; not a validation prediction.,,apparent full-data fit,
+D2_BMP_DM_no_VS__apparent_full_data_residual_obs_minus_pred,Observed minus apparent full-data fitted prediction; not a validation residual.,,apparent full-data fit,observed minus prediction
+source_citation,Common citation for the source dataset.,,source metadata,
+source_doi,DOI for the source dataset.,,source metadata,
+fold_assignment_file,Name of the accompanying fold-level assignment and prediction file.,,cross-reference,
